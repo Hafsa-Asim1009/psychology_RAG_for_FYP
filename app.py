@@ -3,10 +3,10 @@
 # ==========================================================
 
 # 1. UPDATED INSTALLATION
-!pip uninstall google-generativeai -y -q
-!pip install -q -U google-genai
-!pip install -q pinecone-client sentence-transformers tqdm python-dotenv
-!pip install -q "pinecone[grpc]"
+#!pip uninstall google-generativeai -y -q
+#!pip install -q -U google-genai
+#!pip install -q pinecone-client sentence-transformers tqdm python-dotenv
+#!pip install -q "pinecone[grpc]"
 
 print("✅ Updated dependencies installed!")
 
@@ -1310,16 +1310,7 @@ def main():
         print(f"   Response preview: {test_result['response'][:100]}...")
         
         # Ask for demo
-        print("\n" + "=" * 70)
-        demo = input("🎤 Start counseling session chat? (y/n): ").lower().strip()
-        
-        if demo == 'y':
-            print("\n💡 Welcome to your counseling session. I'm here to listen and support you.")
-            print("💡 Try asking: 'can you ask me some questions and provide proper counselling?'")
-            print("💡 Or directly: 'I feel anxious around people, can you help?'")
-            rag.chat_interface()
-        
-        rag.show_stats()
+
         
     except Exception as e:
         print(f"\n❌ ERROR: {e}")
