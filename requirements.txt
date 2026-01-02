@@ -1,0 +1,6 @@
+google-genai==0.2.3
+pinecone-client==2.2.0
+sentence-transformers==2.2.2
+tqdm==4.65.0
+python-dotenv==1.0.0
+Flask==2.3.3
